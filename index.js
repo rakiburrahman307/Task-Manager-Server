@@ -7,7 +7,7 @@ const port = process.env.PORT || 5000;
 // Middle Ware
 app.use(express.json());
 app.use(cors({
-    origin: ['http://localhost:5173', 'http://localhost:5000'],
+    origin: ['http://localhost:5173', 'http://localhost:5000', 'https://fancy-begonia-f1c216.netlify.app'],
     credentials: true,
 }));
 app.use((req, res, next) => {
